@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0d1a2e, #1f2b3b);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-container {
+    background-color: rgba(31, 43, 59, 0.9);
+    padding: 60px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.8s ease-out;
+}
+
+
+
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: fadeIn 1s ease-out;
+}
+
+
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #2d3e5f;
+    border-radius: 8px;
+    background: #2d3e5f;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #03a9f4;
+    outline: none;
+    transform: scale(1.05);
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.login-button:hover {
+    background-color: #0288d1;
+}
+
+.login-button:disabled {
+    background-color: #7bb8d4;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.loading-spinner.active {
+    display: inline-block;
+    border: 3px solid #ffffff;
+    border-top: 3px solid #0288d1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+
+.bottom-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bottom-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bottom-links a:hover {
+    text-decoration: underline;
+}
